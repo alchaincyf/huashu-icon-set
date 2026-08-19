@@ -1,9 +1,10 @@
+<sub>🌐 <a href="README.en.md">English</a> · <b>中文</b></sub>
+
 <div align="center">
 
 # huashu-icon-set · 成套图标生成
 
-**为一个项目端到端生成一整套风格统一的图标：读代码定清单 → 定风格锚点 → 批量生图 → 智能抠图 → 落位 → 交付报告。**<br>
-**End-to-end icon set generation for a codebase: read the code, lock a style anchor, batch-generate, chroma-key, place, and report.**
+**为一个项目端到端生成一整套风格统一的图标：读代码定清单 → 定风格锚点 → 批量生图 → 智能抠图 → 落位 → 交付报告。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Doubao Only](https://img.shields.io/badge/Runtime-Doubao%20Only-orange)](https://www.doubao.com)
@@ -87,21 +88,13 @@ references/
   prompt-guide.md              生图 prompt 方法论：风格参考名表、网格批量+单图标模板、背景色策略、检查清单
 ```
 
-## License
+## 许可证
 
-MIT — free for personal and commercial use, no authorization required.
+MIT —— 个人和商业使用都免费，无需授权。
 
-## Author
+## 作者
 
-[花叔 · @AlchainHust](https://x.com/AlchainHust) — AI Native Coder，独立开发者，AI 自媒体博主。
-
----
-
-**English**
-
-An end-to-end icon-set generator for a codebase, built for Doubao's built-in `image_gen`/`image_edit` (no third-party image API cost). It reads your code to build an icon manifest, locks a style anchor, then generates icons — **defaulting to a 4×4 batch grid (16 icons per call)** for speed, with single-icon generation demoted to a precision fallback for any cell that fails self-check (misaligned, wrong background, wrong semantics) rather than banned outright. A dedicated chroma-key script (`chroma_key.py`) handles background removal — green/blue channel keying with edge despill — and every output is self-checked (`OK`/`BG`/`SMALL`/`EMPTY`) before icons get placed into the project and code references updated.
-
-Requires a Doubao image-gen environment plus Python 3 + Pillow + numpy. See `SKILL.md` for the full agent-facing workflow and the hard-won lessons (`🔴 血泪教训`) baked into the prompt rules.
+[花叔 · @AlchainHust](https://x.com/AlchainHust) —— AI Native Coder，独立开发者，AI 自媒体博主。
 
 ---
 
