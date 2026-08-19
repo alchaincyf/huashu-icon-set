@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Project-local working dirs if someone runs the scripts inside this repo
+**/.icon-anchor/
+**/raw/
+**/sliced/
+**/output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / OS
+*.swp
+.idea/
+.vscode/
+Thumbs.db
